@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <h1>Welcome to the Mobile Shop</h1>
+
+    <form action="JavaScript:void(0)" method="get">
+        <!-- Search through user input -->
+        <section>
+            <input type="search" name="mobBrand" id="mobBrand" placeholder="Brand Name">
+            <input type="search" name="mobModel" id="mobModel" placeholder="Model">
+            <button type="button" onclick="searchVal()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+
+        <!-- Search values through Dropdowns -->
+        <section>
+            <select name="mobileBrand" id="mobileBrand" onchange="fillDropdown2()">
+                <option value="#" selected disabled>Select</option>
+            </select>
+            
+            <select name="mobileModel" id="mobileModel" disabled hidden onchange="showDetails()">
+            </select>
+        </section>
+            
+    </form>
+
+    <ul id="productDetails">
+    </ul>
+
+</body>
+<script src="app.js"></script>
+
+</html>
