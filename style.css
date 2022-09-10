@@ -59,7 +59,7 @@ ul {
     flex-direction: column;
 }
 
-figure, figcaption {
+figure {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,12 +70,15 @@ h4 {
     font-size: 30px;
     margin: 15px 0 10px 0;
     color: #484848;
+    text-align: center;
 }
 
 li {
-    font-size: 22px;
+    font-size: 20px;
     width: fit-content;
-    padding: 20px 10px;
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
     border-radius: 10px;
     border: 1px solid lightgrey;
     list-style-type: none;

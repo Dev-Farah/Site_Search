@@ -21,21 +21,30 @@
     <form action="JavaScript:void(0)" method="get">
         <!-- Search through user input -->
         <section>
-            <input type="search" name="mobBrand" id="mobBrand" placeholder="Brand Name">
-            <input type="search" name="mobModel" id="mobModel" placeholder="Model">
+            <label for="mobBrand">
+                <input type="search" name="mobBrand" id="mobBrand" placeholder="Brand Name">
+            </label>
+
+            <label for="mobModel">
+                <input type="search" name="mobModel" id="mobModel" placeholder="Model">
+            </label>
+
             <button type="button" onclick="searchVal()"><i class="fa-solid fa-magnifying-glass"></i></button>
         </section>
 
         <!-- Search values through Dropdowns -->
         <section>
-            <select name="mobileBrand" id="mobileBrand" onchange="fillDropdown2()">
-                <option value="#" selected disabled>Select</option>
-            </select>
-            
-            <select name="mobileModel" id="mobileModel" disabled hidden onchange="showDetails()">
-            </select>
+            <label for="mobileBrand">
+                <select name="mobileBrand" id="mobileBrand" onchange="fillDropdown2()">
+                </select>
+            </label>
+
+            <label for="mobileModel">
+                <select name="mobileModel" id="mobileModel" disabled hidden onchange="showDetails()">
+                </select>
+            </label>
         </section>
-            
+
     </form>
 
     <ul id="productDetails">
